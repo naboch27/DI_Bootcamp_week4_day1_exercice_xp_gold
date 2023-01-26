@@ -1,0 +1,17 @@
+<p>list items !</p>
+<div>
+    <ul  *ngFor="let items of listItems;let index = index">
+
+        <li>{{index}} - {{items | uppercase}}</li>
+
+    </ul>
+</div>
+
+<div>
+    <ul  *ngFor="let book of bookList;let index = index">
+
+        <li>{{index}} - {{book.name| uppercase}}</li>
+        
+    </ul>
+</div>
+

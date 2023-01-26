@@ -1,0 +1,32 @@
+
+
+
+
+    <span>{{ title }} app is running!</span>
+
+    <span> la date du jour est: {{maDate | date: 'd/MM/yyyy  h:mm a' }}</span>
+
+
+    <div>
+      <p>Without JSON pipe:</p>
+      <pre>{{object}}</pre>
+      <p>With JSON pipe:</p>
+      <pre>{{object | json}}</pre>
+    </div>
+
+
+
+
+    <h2>Async Hero Message and AsyncPipe</h2>
+    <p>Message: {{ message$ | async }}</p>
+    <button type="button" (click)="resend()">Resend</button>
+    
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
